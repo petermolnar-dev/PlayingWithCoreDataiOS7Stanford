@@ -13,6 +13,11 @@
 		C77A75FF1BD0434800A7DDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77A75FD1BD0434800A7DDD0 /* Main.storyboard */; };
 		C77A76011BD0434800A7DDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C77A76001BD0434800A7DDD0 /* Assets.xcassets */; };
 		C77A76041BD0434800A7DDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77A76021BD0434800A7DDD0 /* LaunchScreen.storyboard */; };
+		C77A760D1BD0444600A7DDD0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C77A760B1BD0444600A7DDD0 /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		C77A76161BD0491800A7DDD0 /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A760F1BD0491800A7DDD0 /* Photo+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		C77A76171BD0491800A7DDD0 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A76111BD0491800A7DDD0 /* Photo.m */; settings = {ASSET_TAGS = (); }; };
+		C77A76181BD0491800A7DDD0 /* Photographer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A76131BD0491800A7DDD0 /* Photographer+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		C77A76191BD0491800A7DDD0 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A76151BD0491800A7DDD0 /* Photographer.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		C77A76001BD0434800A7DDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C77A76031BD0434800A7DDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C77A76051BD0434800A7DDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C77A760C1BD0444600A7DDD0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C77A760E1BD0491800A7DDD0 /* Photo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C77A760F1BD0491800A7DDD0 /* Photo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C77A76101BD0491800A7DDD0 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		C77A76111BD0491800A7DDD0 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		C77A76121BD0491800A7DDD0 /* Photographer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photographer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C77A76131BD0491800A7DDD0 /* Photographer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photographer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C77A76141BD0491800A7DDD0 /* Photographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photographer.h; sourceTree = "<group>"; };
+		C77A76151BD0491800A7DDD0 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +72,17 @@
 		C77A75F31BD0434800A7DDD0 /* PlayingWithCoreDataiOS7Stanford */ = {
 			isa = PBXGroup;
 			children = (
+				C77A760E1BD0491800A7DDD0 /* Photo+CoreDataProperties.h */,
+				C77A760F1BD0491800A7DDD0 /* Photo+CoreDataProperties.m */,
+				C77A76101BD0491800A7DDD0 /* Photo.h */,
+				C77A76111BD0491800A7DDD0 /* Photo.m */,
+				C77A76121BD0491800A7DDD0 /* Photographer+CoreDataProperties.h */,
+				C77A76131BD0491800A7DDD0 /* Photographer+CoreDataProperties.m */,
+				C77A76141BD0491800A7DDD0 /* Photographer.h */,
+				C77A76151BD0491800A7DDD0 /* Photographer.m */,
 				C77A75F71BD0434800A7DDD0 /* AppDelegate.h */,
 				C77A75F81BD0434800A7DDD0 /* AppDelegate.m */,
+				C77A760B1BD0444600A7DDD0 /* Model.xcdatamodeld */,
 				C77A75FA1BD0434800A7DDD0 /* ViewController.h */,
 				C77A75FB1BD0434800A7DDD0 /* ViewController.m */,
 				C77A75FD1BD0434800A7DDD0 /* Main.storyboard */,
@@ -149,9 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77A76171BD0491800A7DDD0 /* Photo.m in Sources */,
 				C77A75FC1BD0434800A7DDD0 /* ViewController.m in Sources */,
 				C77A75F91BD0434800A7DDD0 /* AppDelegate.m in Sources */,
 				C77A75F61BD0434800A7DDD0 /* main.m in Sources */,
+				C77A76191BD0491800A7DDD0 /* Photographer.m in Sources */,
+				C77A760D1BD0444600A7DDD0 /* Model.xcdatamodeld in Sources */,
+				C77A76161BD0491800A7DDD0 /* Photo+CoreDataProperties.m in Sources */,
+				C77A76181BD0491800A7DDD0 /* Photographer+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +328,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C77A760B1BD0444600A7DDD0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C77A760C1BD0444600A7DDD0 /* Model.xcdatamodel */,
+			);
+			currentVersion = C77A760C1BD0444600A7DDD0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C77A75E91BD0434800A7DDD0 /* Project object */;
 }
