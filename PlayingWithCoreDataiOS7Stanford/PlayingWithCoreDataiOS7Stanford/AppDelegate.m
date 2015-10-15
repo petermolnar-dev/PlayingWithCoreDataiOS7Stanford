@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-@property (strong, nonatomic) UIDocument *document;
+@property (strong, nonatomic) UIManagedDocument *document;
+@property (strong, nonatomic) NSManagedObjectContext *context;
 @end
 
 @implementation AppDelegate
@@ -19,6 +20,7 @@
 {
     if (self.document.documentState == UIDocumentStateNormal) {
         NSLog(@"State is normal. Go ahead");
+        self.context = [self.document managedObjectContext];
     }
 }
 
